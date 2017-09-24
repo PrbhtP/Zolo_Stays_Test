@@ -15,19 +15,36 @@ public class ZoloTest_Part2 extends BaseTest
 		ZoloBooking_Page zb=new ZoloBooking_Page(driver);
 		ZoloLogin_Page zl=new ZoloLogin_Page(driver);
 		
-//		zl.clickLogin();
-//		zl.setUsername("7777777014");
-//		zl.setPassword("123456");
-//		zl.clickSingin();
+//		after the login to application the steps to be followed
+//		clcik on "Test Account" button
 		zb.clickTestAccountBTN();
+		
+//		clcik on "Hi Test" drop down
 		zl.clickHiTestDD();
+		
+//		click on "Favorites" button
 		zb.clickFavoritesBTN();
+		
+//		clcik on "Zolo​ ​Goodfellas​ ​for​ ​men" present in favorites list
 		zb.clickShortlistedITEM();
+		
+//		clcik on "Request Bed" button
 		zb.clickRequestBedBTN();
+		
+//		enter the future date in date field
 		zb.enterInDateField("2017-09-24");
+		
+//		select the sharing type as "2 Sharing"
 		zb.clickOption2Sharing();
+		
+//		clcik on "Proceed to pay" button
 		zb.clickProceedToPayBTN();
+		
+//		check the "Name" and "Mobile Number"
+//		then click on "Make payment" nutton
 		zb.clickMakePaymentBTN();
+		
+//		select "PayTM" as payment method
 		zb.clickPaytmOptionBTN();
 		
 		
