@@ -26,11 +26,8 @@ public abstract class BaseTest implements AutoConst
 		zl.clickSingin();
 	}
 	@AfterMethod
-	public void closeZolo() throws InterruptedException
+	public void closeZolo()
 	{
-	  ZoloLogin_Page zl=new ZoloLogin_Page(driver);
-      zl.clickHiTestDD();
-      zl.clickLogoutBTN();
       driver.quit();
 	}
 
